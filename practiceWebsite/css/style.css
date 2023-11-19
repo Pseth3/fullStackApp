@@ -1,7 +1,19 @@
+/* 
+This file is used to define the 
+style of the website.
+*/
+
+/*  the astrik means all the elments */
+* {
+    font-size: 100%;
+    font-family: sans-serif;
+   }
 body {
     background-color: rgb(191, 198, 199);
+    margin: 0;
     }
 h1 {color: aquamarine;}
+/* For the main navigation bar */
 .main-nav {
     background-color: #588aa1;
     color: #110e0e;
@@ -31,3 +43,28 @@ p {
     background-color: #110e0e;
     color: #d0d3d4;
     }
+
+#intro {
+    background-color: #525353; 
+    color: #110e0e;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    }
+.product-img {
+    border: solid 2px #110e0e;
+    border-radius: 10% 10% 0% 0%;
+    }
+.cart-items{
+    background-color:#e9e6f0;
+    border:none;
+    border-radius: 20px;
+    width: 255px;
+}
+
+footer {
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    background-color: #2b2343;
+    color: #e9e6f0;
+  }
