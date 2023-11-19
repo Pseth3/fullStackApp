@@ -2,9 +2,13 @@
 <head>
     <title>Signup</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <nav>
+    <!-- Header bar -->
+    <header>
+        <img src="image/svg.png" width="80" height="80" alt="my logo"><br><br>
+    <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="shop.html">Shop</a>
         <a href="contact.html">Contact</a>
@@ -12,4 +16,54 @@
         <a href = "signup.html" id="selected">Signup</a>
         <a href = "cart.html" >Cart</a>
     </nav>
+    </header>
+    <!-- Signup form -->
+    <div class="signup-form">
+        
+        <form>
+            <h1 style="text-align:center; background-color:#2b2343; border-radius:20px; width:90%; padding:10px">Create a new Account</h1>
+            <label for="fname">First Name</label><br>
+            <input type="text" name="firstname" placeholder="First Name" id="fname" class="form-input" required><br>
+
+            <label for="lname">Last Name</label><br>
+            <input type="text" name="lastname" placeholder="Last Name" id="lname" class="form-input" required><br> 
+
+            <!-- <label for="dob">Date of Birth</label><br>
+            <input type="date" name="dob" id="dob" required><br>
+
+            <label for="phone">Phone Number</label><br>
+            <input type="tel" name="phone" placeholder="Phone Number" id="phone" required><br>
+
+            <label for="gender">Sex</label><br>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+            <input type="radio" name="gender" value="Other">Other <br>
+
+            <label for="picture">Profile Picture</label><br>
+            <input type="file" name="picture" id="picture" ><br> -->
+
+
+            <label for="uname">Username</label><br>
+            <input type="text" name="username" placeholder="Username" id="uname" class="form-input" required><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" name="email" placeholder="Email" id="email" class="form-input" required><br>
+
+            <label for="pass">Password</label><br>
+            <input type="password" name="password" placeholder="Password" id="pass" class="form-input" required><br>
+
+            <label for="confirm-pass">Confirm Password</label><br>
+            <input type="password" name="password" placeholder="Confirm Password" id="confirm-pass" class="form-input" required><br><br>
+
+            <input type="checkbox" name="ack" id="ack" required>
+            <label for="ack">I agree to the<a href="">terms and conditions.</a></label>
+            <br><br>
+
+            <input type="submit" name="submit" value="Signup" class="button"><br>
+            <input type="reset" name="reset" value="Reset" class="button"><br>
+
+        </form>
+        <footer>
+            <p>© 2022 Prateek Sethi Enterprise</p>
+        </footer>
 </html>

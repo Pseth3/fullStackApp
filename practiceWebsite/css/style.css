@@ -3,64 +3,146 @@ This file is used to define the
 style of the website.
 */
 
-/*  the astrik means all the elments */
-* {
+/* ################  General  ######################## */
+body {
+    background-color: rgb(236, 246, 255);
+    /* margin: 0; */
     font-size: 100%;
     font-family: sans-serif;
-   }
-body {
-    background-color: rgb(191, 198, 199);
-    margin: 0;
     }
-h1 {color: aquamarine;}
+h1 {color: whitesmoke;
+padding: 10px;}
+
 /* For the main navigation bar */
+header{
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-between;
+    background-color: #2b2343;
+}
+
+
 .main-nav {
-    background-color: #588aa1;
-    color: #110e0e;
+    display: flex;
+    background-color:#2b2343;
+    color: #ffffff;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 30px;
+    margin: 10px 0px;
+    /* width: 100%;
+    padding-left: 20px; */
+    
     }
-    a {
-        color: #110e0e;
-        text-decoration: none;
-        padding: 10px;
-        text-decoration: none;
-        }
-    a:hover {
-        background-color: #110e0e;
-        color: #d0d3d4;
-        }
+a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    }
+.main-nav a:hover {
+    background-color: #08F;
+    color: #d0d3d4;
+    }
 p {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
+    color: white;
+    padding: 10px;
     }
     .container {
         width: 80%;
         margin: auto;
         overflow: hidden;
         }
+
+
+/* ################  Index  ######################## */
 #selected {
-    background-color: #110e0e;
+    background-color:#08F;
     color: #d0d3d4;
     }
 
 #intro {
-    background-color: #525353; 
-    color: #110e0e;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color:  #08F; 
+    margin: auto;
+    width: 80%;
+    border-radius: 20px;
     }
+
+/* ################  Cart  ######################## */
+
+main{
+    display:flex;
+}
+
 .product-img {
     border: solid 2px #110e0e;
     border-radius: 10% 10% 0% 0%;
+    margin: auto;
     }
 .cart-items{
-    background-color:#e9e6f0;
+    background-color:#08F;
+    margin: auto;
     border:none;
     border-radius: 20px;
     width: 255px;
 }
 
+/* ################  Form  ######################## */
+form {
+    width: 400px;
+    margin: 50px auto;
+    border: 3px solid #f1f1f1;
+    border-radius: 20px;
+    background-color: #08F;
+    color: ashenwhite;
+    padding: 25px;
+    }
+form a{
+    color: #3d414a;
+    text-decoration: none;
+    }
+label {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 10px 0px;
+    }
+
+.button{
+    background-color:  #2b2343;
+    color: #ffffff;
+    font-size: medium;
+    width:100%;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px 0px;
+    /* border: 3px solid #f1f1f1;
+    outline: olive; */
+}
+
+.button:hover{
+    background-color: #221c35;
+    color: #d0d3d4;
+    cursor: pointer;
+}
+
+.form-input{
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 90%;
+    border: 3px solid #f1f1f1;
+    outline: olive;
+    padding: 10px;
+}
+
+.form-input:focus{
+    border: 3px solid #555;
+}
+
+/* ################  Footer  ######################## */
 footer {
     text-align: center;
     height: 300px;
